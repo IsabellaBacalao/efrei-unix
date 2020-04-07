@@ -1,0 +1,7 @@
+Pour supprimer un fichier que finis par ~ ou commence et finis par # :
+
+find . -name "~nomfichier" -exec rm {} \;
+or
+find . -name "#nomfichier#" -exec rm {} \;
+
+find -delete "#nomfichier#" -exec rm {} \;
